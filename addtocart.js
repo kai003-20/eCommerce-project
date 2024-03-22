@@ -114,21 +114,21 @@ function displaycart(){
     document.getElementById("count").innerHTML=cart.length;
     if(cart.length==0){
         document.getElementById('cartItem').innerHTML = "Your cart is empty";
-        document.getElementById("total").innerHTML = "$ "+0+".00";
+        document.getElementById("total").innerHTML = "Ksh "+0+".00";
     }
     else{
         document.getElementById("cartItem").innerHTML = cart.map((items)=>
         {
             var {image, title, price} = items;
             total=total+price;
-            document.getElementById("total").innerHTML = "$ "+total+".00";
+            document.getElementById("total").innerHTML = "Ksh "+total+".00";
             return(
                 `<div class='cart-item'>
                 <div class='row-img'>
                     <img class='rowimg' src=${image}>
                 </div>
                 <p style='font-size:12px;'>${title}</p>
-                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
+                <h2 style='font-size: 15px;'>Ksh ${price}.00</h2>`+
                 "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
             );
         }).join('');
@@ -137,17 +137,6 @@ function displaycart(){
     
 }
 
-/*document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('.search-form');
-    const input = document.querySelector('#search-input');
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const searchTerm = input.value.trim();
-        // Perform search functionality based on the searchTerm
-        console.log('Searching for:', searchTerm);
-    });
-});*/
 
 
 
