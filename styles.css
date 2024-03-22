@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin: 0;
+    padding: 0;
+    
+   
+}
+nav{
+   
+    width: 100%;
+
+     
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.icon-image {
+     
+    height: auto; 
+    margin-right: 10px;
+    max-width: 20%; 
+    border-radius: 50%;
+    width: 80px; 
+    height: 80px; 
+    position: absolute;
+    top: 15px; 
+}
+.logo {
+        display: flex;
+        align-items: center;
+}
+    
+
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: goldenrod;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: goldenrod;
+    color: white;
+}
+.container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#root{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 25%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+h2{
+    font-size: 20px;
+    color: red;
+}
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #333;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+/* Example of responsive CSS */
+@media only screen and (max-width: 600px) {
+    /* Styles for screens less than or equal to 600px wide */
+    body {
+        font-size: 14px;
+    }
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.search-button {
+    padding: 8px 15px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 4px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    
+}
+.f_container {
+    text-align: center;
+    color: white;
+    background-color: #333;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    bottom: 0;
+    
+   
+}
+
+.login-icon {
+    width: 25px; 
+    height: auto; 
+    margin-right: 5px; 
+}
+
+.main-container{
+    
+    padding: 6px;
+}
+
+
+/* Default styles */
+/* Add your default styles here */
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .sidebar {
+        display: none; /* Hide sidebar on small screens */
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query for screens larger than 768px */
+@media only screen and (min-width: 769px) {
+    /* Adjustments for larger screens */
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidebar {
+        width: 25%; /* Set sidebar width */
+    }
+    #root {
+        width: 70%; /* Set main content width */
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-size: 24px; /* Increase font size for larger screens */
+    }
+}
+
+

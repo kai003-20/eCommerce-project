@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .payment-methods label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .payment-methods label img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       
+        <form id="order-form">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="address">Shipping Address</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="payment">Payment Method</label>
+                <div class="payment-methods">
+                    <label>
+                        <input type="radio" name="payment" value="mpesa" required>
+                        <img src="image/mpesa.png" alt="M-Pesa">
+                        M-Pesa
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="paypal" required>
+                        <img src="image/paypal.jpeg" alt="PayPal">
+                        PayPal
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="bank-transfer" required>
+                        <img src="image/bank transfer.png" alt="Bank Transfer">
+                        Bank Transfer
+                    </label>
+                </div>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('order-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const orderDetails = {};
+            formData.forEach((value, key) => {
+                orderDetails[key] = value;
+            });
+            setTimeout(function() {
+                alert('Order sent successfully!');
+                window.location.href = 'index.html'; 
+            }, 1000); 
+        });
+    </script>
+</body>
+</html>

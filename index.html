@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+       
+        
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <title>MIAMI ELECTRONICS ONLINE SHOPPING</title>
+    
+    </head>
+    
+    <body>
+        <nav>
+            <header>
+                <div class="logo">MIAMI</div>
+                <img src="image/icon.jpeg" alt="Icon" class="icon-image">
+                <form action="#" method="GET" class="search-form">
+                    <input type="text" placeholder="Search products..." name="search" id="search-input">
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+            </header>
+        </nav>
+    <div class="main-container">
+        <div class="header">
+            <p class="logo">MIAMI ELECTRONICS ONLINE SHOPPING</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+            <a href="login.html" class="login-link">
+                <img src="image/account.png" alt="Login" class="login-icon">
+                
+            </a>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                    <button id="proceedBtn">Proceed to Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div class="f_container">
+                <p>&copy; 2024 Kelvin Kai - All Rights Reserved</p>
+            </div>
+        </footer>
+        <script src="addtocart.js"></script>
+    </body>
+</html>
