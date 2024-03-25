@@ -5,6 +5,7 @@
     font-family: 'poppins', sans-serif;
     font-size: 18px;
 }
+@media screen {
 body{
     display: flex;
     align-items: center;
@@ -201,13 +202,7 @@ button:hover{
     color: #333;
 }
 
-/* Example of responsive CSS */
-@media only screen and (max-width: 600px) {
-    /* Styles for screens less than or equal to 600px wide */
-    body {
-        font-size: 14px;
-    }
-}
+
 
 .search-form {
     display: flex;
@@ -264,49 +259,9 @@ footer{
     
     padding: 6px;
 }
-
-
-/* Default styles */
-/* Add your default styles here */
-
-/* Media query for screens smaller than 768px */
-@media only screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
-    .sidebar {
-        display: none; /* Hide sidebar on small screens */
-    }
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .logo {
-        margin-bottom: 20px;
-    }
 }
 
-/* Media query for screens larger than 768px */
-@media only screen and (min-width: 769px) {
-    /* Adjustments for larger screens */
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
-    .sidebar {
-        width: 25%; /* Set sidebar width */
-    }
-    #root {
-        width: 70%; /* Set main content width */
-    }
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo {
-        font-size: 24px; /* Increase font size for larger screens */
-    }
-}
+
+
 
 

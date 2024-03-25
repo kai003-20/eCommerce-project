@@ -77,6 +77,12 @@ const product = [
         title: 'JBL Bluetooth Speaker',
         price: 999,
     },
+    {
+        id: 13,
+        image: 'image/product14.png',
+        title: 'OTG Type C',
+        price: 199,
+    },
 ];
 const categories = [...new Set(product.map((item)=>
     {return item}))]
